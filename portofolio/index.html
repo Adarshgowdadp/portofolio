@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adarsh Gowda D P — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;        /* slate-900 */
+      --card:#111827;      /* gray-900 */
+      --muted:#94a3b8;     /* slate-400 */
+      --text:#e5e7eb;      /* gray-200 */
+      --accent:#22d3ee;    /* cyan-400 */
+      --chip:#1f2937;      /* gray-800 */
+      --ring: rgba(34,211,238,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial; 
+      background: radial-gradient(1200px 800px at 90% -10%, rgba(34,211,238,.08), transparent 70%),
+                  radial-gradient(1000px 700px at -10% 10%, rgba(168,85,247,.08), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{opacity:.9}
+
+    .wrap{max-width:1000px; margin:0 auto; padding:28px 20px 64px}
+
+    header{
+      display:grid; grid-template-columns:110px 1fr; gap:22px; align-items:center; 
+      padding:22px; background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border:1px solid rgba(255,255,255,.06); border-radius:18px; backdrop-filter: blur(6px);
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    .avatar{
+      width:110px; height:110px; border-radius:16px; object-fit:cover; display:block;
+      border:2px solid rgba(255,255,255,.08); box-shadow:0 8px 20px rgba(0,0,0,.3);
+    }
+    .title{display:flex; flex-wrap:wrap; align-items:center; gap:10px}
+    h1{font-size:28px; margin:0}
+    .badge{padding:6px 10px; background:var(--chip); color:#cbd5e1; border-radius:999px; font-size:12px; border:1px solid rgba(255,255,255,.06)}
+    .meta{display:flex; gap:18px; flex-wrap:wrap; font-size:14px; color:var(--muted)}
+    .meta span{display:flex; gap:8px; align-items:center}
+
+    main{margin-top:24px; display:grid; grid-template-columns:1.1fr .9fr; gap:24px}
+    @media (max-width: 900px){ main{grid-template-columns:1fr} header{grid-template-columns:80px 1fr} .avatar{width:80px;height:80px}}
+
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.07); border-radius:18px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.25)}
+    .card h2{margin:0 0 12px; font-size:20px}
+    .sub{color:#cbd5e1; margin:0 0 16px; font-weight:400}
+
+    .grid{display:grid; gap:14px}
+    .item{padding:14px; background:#0b1220; border:1px solid rgba(255,255,255,.06); border-radius:14px}
+
+    .kvs{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{padding:6px 10px; background:var(--chip); border:1px solid rgba(255,255,255,.06); border-radius:999px; font-size:13px}
+
+    .footer{margin-top:28px; text-align:center; color:var(--muted); font-size:13px}
+    .cta{display:inline-flex; gap:8px; align-items:center; margin-top:10px; padding:10px 14px; border-radius:12px; background:#0b1220; border:1px solid rgba(255,255,255,.08)}
+    .cta:focus{outline:2px solid var(--ring); outline-offset:2px}
+    .row{display:flex; gap:12px; flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- HEADER -->
+    <header>
+      <!-- Replace src with your hosted photo url -->
+      <!-- Example: <img class="avatar" src="/images/adarsh.jpg" alt="Adarsh Gowda" /> -->
+      <img class="avatar" src="images/WhatsApp Image 2025-05-26 at 09.04.44_3025ab57.jpg" alt="Adarsh Gowda" />
+      <div>
+        <div class="title">
+          <h1>Adarsh Gowda D P</h1>
+          <span class="badge">Software Developer (Java)</span>
+        </div>
+        <div class="meta">
+          <span>📍 Bengaluru, India</span>
+          <span>📞 <a href="tel:+919663373154">+91 96633 73154</a></span>
+          <span>✉️ <a href="mailto:gowdaadarsh168@gmail.com">gowdaadarsh168@gmail.com</a></span>
+          <span>💼 <a href="https://www.linkedin.com/in/adarsh-gowda-d-p-17a58a227/">LinkedIn</a></span>
+          <span>💻 <a href="https://github.com/Adarshgowdadp">GitHub</a></span>
+        </div>
+        <p class="sub">Persuing MCA At DAyananda Sagar Academy of Technology and Management, and BCA graduate with strong proficiency in <b>Java</b> and web technologies. Passionate about building clean, reliable applications and eager to contribute to a dynamic development team.</p>
+        <a class="cta" href="#contact">Get in touch →</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN -->
+      <section class="card">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="item">
+            <b>Informational Website</b>
+            <p>Built a responsive website to showcase place information with images and live location using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.</p>
+            <div class="kvs"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+          </div>
+          <div class="item">
+            <b>Product Management System</b>
+            <p>Java desktop app to manage product data (type, location, warranty) with CRUD operations and validations.</p>
+            <div class="kvs"><span class="chip">Java</span><span class="chip">OOP</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="card">
+        <h2>Skills</h2>
+        <div class="row">
+          <span class="chip">Java</span>
+          <span class="chip">Python</span>
+          <span class="chip">C</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Linux</span>
+          <span class="chip">SQL</span>
+        </div>
+        <h2 style="margin-top:18px">Interests</h2>
+        <div class="row">
+          <span class="chip">Web Development</span>
+          <span class="chip">Problem Solving</span>
+          <span class="chip">Video Editing</span>
+          <span class="chip">Fitness</span>
+        </div>
+      </aside>
+
+      <section class="card">
+        <h2>Education</h2>
+        <div class="grid">
+          <div class="item"><b>Dayananda Sagar Academy of Technology and Management, Bengaluru</b><br />Master of Computer Applications (MCA) — <i>CGPA: 7.8</i></div>
+          <div class="item"><b>SSMRV College, Bengaluru</b><br />Bachelor of Computer Applications (BCA) — <i>CGPA: 7.61</i></div>
+          <div class="item"><b>Arvind College, Kunigal</b><br />Pre-University (12th) — <i>71.66%</i></div>
+          <div class="item"><b>St. Joseph’s School, Channapatna</b><br />SSLC (10th) — <i>80.64%</i></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Internships</h2>
+        <div class="grid">
+          <div class="item">
+            <b>Enterprise Technology & Data Center Architecture</b>
+            <p>Experiential learning on enterprise IT infrastructure and data center design concepts.</p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:18px">Certificates</h2>
+        <ul>
+          <li>Cybercrime Awareness Certificate</li>
+          <li>CSS (Cascading Style Sheets) Certificate</li>
+          <li>SQL Certificate</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card" style="grid-column:1/-1">
+        <h2>Contact</h2>
+        <p>If my profile fits your requirements, feel free to reach out for collaboration or opportunities.</p>
+        <p><b>Email:</b> <a href="mailto:gowdaadarsh168@gmail.com">gowdaadarsh168@gmail.com</a> &nbsp; | &nbsp;
+           <b>Phone:</b> <a href="tel:+919663373154">+91 96633 73154</a></p>
+      </section>
+    </main>
+
+    <p class="footer">© <span id="yr"></span> Adarsh Gowda D P</p>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
